@@ -1,4 +1,5 @@
 # GPF: Green Power Forwarding
+> A novel technique to save energy in wired networks.
 
 ## PART I: Real-time network power monitoring
 
