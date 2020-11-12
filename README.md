@@ -36,3 +36,12 @@ On another terminal, start the REST endpoints app -
 ```
 python3 REST_endpoint.py
 ```
+
+## To-do list:
+* 
+
+## Status
+Project is: _in progress_.
+
+## Contact
+Created by [Rahil Gandotra](mailto:rahil.gandotra@colorado.edu) - feel free to contact me!
