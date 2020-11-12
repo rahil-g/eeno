@@ -2,7 +2,7 @@
 
 ## PART I: Real-time network power monitoring
 
-OS: 16.04.07 LTS
+OS: Ubuntu 16.04.07 LTS
 
 Required packages:
 Python3, 
