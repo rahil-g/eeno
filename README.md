@@ -42,13 +42,13 @@ $ python3 sim_snmp.py 3
 ```
 More options can be cheked using -h. The sim_snmp.py app simulates SNMP agents based on simulation data stored in .snmprec files in /data directory. The simple plain-text files are in the format OID|TYPE|VALUE format.
 
-The entity<#>.snmprec files are based on the ENTITY MIB defined in [RFC 6933](https://tools.ietf.org/html/rfc6933) and are used to identify the specific device label and its entPhysicalIndex.
+>The entity<#>.snmprec files are based on the ENTITY MIB defined in [RFC 6933](https://tools.ietf.org/html/rfc6933) and are used to identify the specific device label and its entPhysicalIndex.
 
 ```
 $ cat data/entity1.snmprec
 1.3.6.1.2.1.47.1.1.1.1.2.1|4|Device A       #Device label
 ```
-The eopower#.snmprec files are based on the EMAN MIB defined in [RFC 7460](https://tools.ietf.org/html/rfc7460) and are used to indicate the power metering capability, current power in Watts, and unit multiplier. Additional customized OIDs are defined to exchange the current bandwidth in Mbps, current delay in ms, and current packet loss in % values.
+>The eopower#.snmprec files are based on the EMAN MIB defined in [RFC 7460](https://tools.ietf.org/html/rfc7460) and are used to indicate the power metering capability, current power in Watts, and unit multiplier. Additional customized OIDs are defined to exchange the current bandwidth in Mbps, current delay in ms, and current packet loss in % values.
 ```
 $ cat data/eopower1.snmprec
 1.3.6.1.2.1.229.1.1.1.1.1|2|4               #Power metering capability
@@ -63,7 +63,8 @@ On another terminal, start the RNPP app -
 ```
 $ python3 rnpp.py
 ```
-The RNPP app first reads the file SNMP-NSOT.csv to discover the SNMP agents. Therefore, any SNMP config changes would also need to be reflected in the SNMP-NSOT.csv file. The format of the file is - IP,Port,SNMP_ver,Security_level,Auth_protocol,Auth_pass,Security_name,Priv_protocol,Priv_pass
+The RNPP app first reads the file SNMP-NSOT.csv to discover the SNMP agents. Therefore, any SNMP config changes would also need to be reflected in the SNMP-NSOT.csv file.
+>The format of the file is - IP,Port,SNMP_ver,Security_level,Auth_protocol,Auth_pass,Security_name,Priv_protocol,Priv_pass
 ```
 $ cat SNMP-NSOT.csv
 127.0.0.1,1024,3,authPriv,MD5,auctoritas,simulator,DES,privatus
