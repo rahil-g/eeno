@@ -1,6 +1,7 @@
 # GPF: Green Power Forwarding
 
 ## Table of contents
+* [General info](#general-info)
 * [Part I: RNPP](#part-i-real-time-network-power-monitoring-rnpp)
 
 ## General info
