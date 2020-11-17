@@ -1,9 +1,11 @@
 # GPF: Green Power Forwarding
 > A novel technique to save energy in wired networks.
 
-## PART I: Real-time network power monitoring
+## PART I: Real-time network power monitoring [RNPP]
 
-OS: Ubuntu 16.04.07 LTS
+### Quick Start
+
+Tested on OS: Ubuntu 16.04.07 LTS
 
 Required packages:
 Python3, 
@@ -12,7 +14,12 @@ Pip3
 $ sudo apt-get update; sudo apt-get install python3-pip -y; sudo -H pip3 install --upgrade pip
 ```
 
-First, install all packages from the packages.txt file -
+Install RNPP from the source code -
+```
+git clone https://github.com/rahil-g/gpf.git
+```
+
+Install the required Linux packages from the packages.txt file -
 ```
 sudo apt-get update ; cat packages.txt | xargs sudo apt-get install -y
 ```
@@ -27,9 +34,9 @@ Start the SNMP agents simulation using the sim_snmp.py app -
 python3 sim_snmp.py 3
 ```
 
-On another terminal, start the Energy Monitoring System app -
+On another terminal, start the RNPP app -
 ```
-python3 EMS.py
+python3 rnpp.py
 ```
 
 On another terminal, start the REST endpoints app -
