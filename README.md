@@ -24,6 +24,7 @@ $ sudo apt-get update; sudo apt-get install python3-pip -y; sudo -H pip3 install
 Install RNPP from the source code -
 ```
 $ git clone https://github.com/rahil-g/gpf.git
+cd gpf/
 ```
 
 Install the required Linux packages from the packages.txt file -
