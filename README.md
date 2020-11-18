@@ -41,7 +41,7 @@ Start the SNMP agents simulation using the sim_snmp.py app -
 ```
 $ python3 sim_snmp.py 3
 ```
-More options can be cheked using -h. The sim_snmp.py app simulates SNMP agents based on simulation data stored in .snmprec files in /data directory. The simple plain-text files are in the format OID|TYPE|VALUE format.
+More options can be cheked using -h. The sim_snmp.py app simulates SNMP agents based on simulation data stored in .snmprec files in the data/ directory. The simple plain-text files are in the format OID|TYPE|VALUE format.
 
 >The entity<#>.snmprec files are based on the ENTITY MIB defined in [RFC 6933](https://tools.ietf.org/html/rfc6933) and are used to identify the specific device label and its entPhysicalIndex.
 
@@ -76,6 +76,12 @@ On another terminal, start the REST endpoints app -
 $ python3 REST_endpoint.py
 ```
 Send HTTP requests to the IP:5002, IP:5002/devices, IP:5002/devices/(endpoint) (like - IP:5002/devices/127.0.0.1:1024).
+
+To check the dynamic nature of the NetPow app, on another terminal, navigate to the data/ directory and start the dynamic data app-
+```
+cd data/
+python3 dynamic_data.py
+```
 
 ## To-do list:
 * 
