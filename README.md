@@ -2,12 +2,12 @@
 
 ## Table of contents
 * [General info](#general-info)
-* [Part I: RNPP](#part-i-real-time-network-power-monitoring-rnpp)
+* [Part I: NetPow](#part-i-real-time-network-power-monitoring-netpow)
 
 ## General info
 A novel technique to save energy in wired networks.
 
-## PART I: Real-time network power monitoring (RNPP)
+## PART I: Real-time Network Power monitoring (NetPow)
 A framework for non-intrusive collection of real-time power consumption information from the next generation of networking hardware by employing information models.
 
 ### Quick Start
@@ -21,7 +21,7 @@ Pip3
 $ sudo apt-get update; sudo apt-get install python3-pip -y; sudo -H pip3 install --upgrade pip
 ```
 
-Install RNPP from the source code -
+Install NetPow from the source code -
 ```
 $ git clone https://github.com/rahil-g/gpf.git
 $ cd gpf/
@@ -60,11 +60,11 @@ $ cat data/eopower1.snmprec
 1.9.2.8.3.7.4.6.5|4|10                      #Current packet loss in %
 ```
 
-On another terminal, start the RNPP app -
+On another terminal, start the NetPow app -
 ```
-$ python3 rnpp.py
+$ python3 netpow.py
 ```
-The RNPP app first reads the file SNMP-NSOT.csv to discover the SNMP agents. Therefore, any SNMP config changes would also need to be reflected in the SNMP-NSOT.csv file.
+The NetPow app first reads the file SNMP-NSOT.csv to discover the SNMP agents. Therefore, any SNMP config changes would also need to be reflected in the SNMP-NSOT.csv file.
 >The format of the file is - IP,Port,SNMP_ver,Security_level,Auth_protocol,Auth_pass,Security_name,Priv_protocol,Priv_pass
 ```
 $ cat SNMP-NSOT.csv
