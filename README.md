@@ -3,8 +3,8 @@
 
 ## Table of contents
 * [General info](#general-info)
-* [Part I: NetPow]()
-* [Part II: GPF]()
+* [Part I: NetPow](#part-i-netpow)
+* [Part II: GPF](#part-ii-gpf)
 
 ## General info
 Problem -> The energy consumption of the ICT infrastructure has been rising steadily. These high rates of energy consumption translate into large carbon footprints since coal, the most carbon-intensive approach to producing energy, remains the single largest source of power generation globally. The wired-network infrastructure alone is predicted to become a considerable portion of the total ICT energy consumption.
